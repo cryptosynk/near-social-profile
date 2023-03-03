@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
+/* :root {
+  --textColor: #c3cbd4;
+  --textColor2: #828a94;
+  --textColor3: #33323a;
+
+  --buttonColor: #58a6ff;
+
+  --borderColor: #363b42;
+
+  --ui: #ffffff;
+  --backgroundColor: #0d1117;
+} */
 * {
   font-family: "Open Sans", sans-serif;
 
@@ -112,6 +124,10 @@ button {
 
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+}
+
+.btn .btn-success {
+  background-color: #2ea043 !important;
 }
 
 button:hover {
@@ -290,6 +306,37 @@ a:hover {
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
+}
+
+.editor {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.editor .inputContainer {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 7.5px;
+}
+
+.editor .inputContainer .label {
+  color: #828a94;
+}
+
+.editor .inputContainer .input {
+  width: 100%;
+  background-color: transparent;
+  min-height: 30px;
+  border: 1px solid #363b42;
+  border-radius: 5px;
+
+  resize: vertical;
+
+  padding-inline: 7.5px;
 }
 
 @media only screen and (max-width: 800px) {
