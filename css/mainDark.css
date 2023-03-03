@@ -197,10 +197,6 @@ a:hover {
   font-weight: 600;
 }
 
-.widgetItem:hover > h3 {
-  text-decoration: underline;
-}
-
 .contributions {
   border: 1px solid #363b42;
   border-radius: 5px;
